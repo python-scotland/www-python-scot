@@ -1,0 +1,22 @@
+[project]
+name = "www-python-scot"
+version = "0.1.0"
+description = "The website for Python Scotland"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.0",
+    "pyhead>=4.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyqwe>=3.1.1",
+]
+
+[tool.pyqwe]
+flask = "*:flask run --debug"
+tailwindcss = "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
+dev = [
+    "*:flask run --debug",
+    "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
+]
