@@ -1,3 +1,7 @@
+[x-cloak] {
+    display: none;
+}
+
 html {
     height: 100vh;
     background: linear-gradient(20deg, #c7ccff, #fffbd4) no-repeat center center fixed;
@@ -8,7 +12,12 @@ nav {
     max-w-screen-lg
     mx-auto
     top-0
-    sticky
+    sticky;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.regular-menu {
+    @apply
     flex
     justify-between
     items-center
@@ -16,10 +25,20 @@ nav {
     px-4
     my-4
     rounded-lg;
-    background-color: rgba(255, 255, 255, 0.95);
 }
 
-nav ul {
+.mobile-menu {
+    @apply
+    flex
+    flex-col
+    justify-between
+    items-center
+    py-2
+    px-4
+    mb-4
+}
+
+.regular-menu ul {
     @apply
     list-none
     flex
@@ -27,7 +46,18 @@ nav ul {
     px-2
 }
 
-nav li {
+.mobile-menu ul {
+    @apply
+    w-full
+    list-none
+    flex
+    flex-col
+    gap-2
+    px-2
+    py-4
+}
+
+.regular-menu li, .mobile-menu li {
     @apply
     inline-block;
 }
@@ -68,7 +98,7 @@ section {
 
 footer {
     @apply
-        py-10
+    py-10
     text-gray-600
 }
 

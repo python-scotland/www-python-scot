@@ -1,0 +1,26 @@
+<script defer>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('main', () => ({
+
+            isMobile: window.innerWidth < 768,
+            menuOpen: false,
+            windowWidth: window.innerWidth,
+
+            init() {
+                window.addEventListener('resize', () => {
+                    this.windowWidth = window.innerWidth;
+                    if (this.windowWidth > 768) {
+                        // Reset mobile view flag.
+                        if (this.isMobile) {this.isMobile = false;}
+                        // Close menu as no longer in mobile view.
+                        if (this.menuOpen) {this.menuOpen = false;}
+                    } else {
+                        // Set mobile view flag.
+                        if (!this.isMobile) {this.isMobile = true;}
+                    }
+                })
+            }
+
+        }))
+    })
+</script>

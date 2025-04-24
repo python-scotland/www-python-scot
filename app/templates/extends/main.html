@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ g.head() }}
+<head>
+    {{ g.head() }}
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-<body>
+
+<body x-data="main">
 
 {% include 'includes/menu.html' %}
 
@@ -16,4 +20,7 @@
 {% include 'includes/footer.html' %}
 
 </body>
+
+{% include 'includes/alpinejs_data_main.html' %}
+
 </html>

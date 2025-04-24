@@ -1,4 +1,4 @@
-<nav>
+<nav class="regular-menu" x-show="!isMobile">
     <a href="/">
         <img
                 src="{{ url_for('static', filename='img/python-scotland-logo-rework.gif') }}"
@@ -7,7 +7,7 @@
         />
     </a>
 
-    <ul>
+    <ul class="regular-menu">
         <li>
             <a href="/">
                 <img
@@ -49,5 +49,67 @@
             </a>
         </li>
     </ul>
+</nav>
 
+<nav class="mobile-menu" x-show="isMobile">
+    <div class="flex gap-2 items-center justify-between w-full">
+        <a href="/">
+            <img
+                    src="{{ url_for('static', filename='img/python-scotland-logo-rework.gif') }}"
+                    alt="Python Scotland Logo"
+                    class="w-24"
+            />
+        </a>
+
+        <div class="btn-a" @click="menuOpen = !menuOpen">
+            <img
+                    src="{{ url_for('static', filename='emoji_icons/hamburger_emoji_48.png') }}"
+                    alt="Hamburger Icon"
+                    style="height: 18px; width: 18px;"
+            />
+        </div>
+    </div>
+
+    <ul x-show="menuOpen">
+        <li>
+            <a href="/">
+                <img
+                        src="{{ url_for('static', filename='emoji_icons/home_emoji_48.png') }}"
+                        alt="Home Icon"
+                        style="height: 18px; width: 18px;"
+                />
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/our-mission">
+                <img
+                        src="{{ url_for('static', filename='emoji_icons/mission_emoji_48.png') }}"
+                        alt="Mission Icon"
+                        style="height: 18px; width: 18px;"
+                />
+                Our Mission
+            </a>
+        </li>
+        {#        <li>#}
+        {#            <a href="/get-involved">#}
+        {#                <img#}
+        {#                        src="{{ url_for('static', filename='emoji_icons/get_involved_icon_48.png') }}"#}
+        {#                        alt="Get Involved Icon"#}
+        {#                        style="height: 18px; width: 18px;"#}
+        {#                />#}
+        {#                Get Involved#}
+        {#            </a>#}
+        {#        </li>#}
+        <li>
+            <a href="/support-us">
+                <img
+                        src="{{ url_for('static', filename='emoji_icons/donate_emoji_48.png') }}"
+                        alt="Get Involved Icon"
+                        style="height: 18px; width: 18px;"
+                />
+                Support Us
+            </a>
+        </li>
+    </ul>
 </nav>
