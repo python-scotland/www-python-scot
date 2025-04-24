@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: "scot-python"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "7011:5000"
+    restart: always
