@@ -93,12 +93,14 @@ main {
 
 section {
     @apply
+    px-4
     text-gray-600
 }
 
 footer {
     @apply
     py-10
+    px-2
     text-gray-600
 }
 
