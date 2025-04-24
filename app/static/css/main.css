@@ -278,6 +278,7 @@
 }
 html {
   height: 100vh;
+  background: #c7ccff;
   background: linear-gradient(20deg, #c7ccff, #fffbd4) no-repeat center center fixed;
 }
 nav {
