@@ -10,6 +10,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "favicons>=0.2.2",
     "pyqwe>=3.1.1",
 ]
 
@@ -17,6 +18,6 @@ dev = [
 flask = "*:flask run --debug"
 tailwindcss = "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
 dev = [
-    "*:flask run --debug",
+    "*:flask run --debug --port 5001",
     "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
 ]

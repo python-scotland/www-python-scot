@@ -8,18 +8,47 @@ article {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+article a {
+    @apply
+    text-blue-500
+    hover:underline;
+}
+
 .article-content {
     @apply
     mb-2
-    px-4;
+    px-6;
 }
 
 .article-content h1 {
     @apply
+    text-3xl;
+}
+
+.article-content h2 {
+    @apply
     text-2xl;
+}
+
+.article-content h3 {
+    @apply
+    font-bold
+    text-lg;
 }
 
 .article-content p {
     @apply
     my-4;
+}
+
+.article-content ul {
+    @apply
+        ml-2
+    list-disc
+    list-inside;
+}
+
+.article-content li {
+    @apply
+    my-2;
 }

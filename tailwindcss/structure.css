@@ -15,15 +15,15 @@ nav {
     py-2
     px-4
     my-4
-    bg-white
     rounded-lg;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 nav ul {
     @apply
     list-none
     flex
-    gap-4
+    gap-2
     px-2
 }
 
@@ -32,7 +32,7 @@ nav li {
     inline-block;
 }
 
-nav a {
+nav ul a {
     @apply
     flex
     gap-2
@@ -41,17 +41,39 @@ nav a {
     px-4
     py-3
     text-sm
+    border
+    border-gray-200
     cursor-pointer;
     background-color: rgba(0, 0, 0, 0.04);
 }
 
-nav a:hover {
+nav ul a:hover {
     @apply
+    border-gray-300
     shadow-sm;
 }
 
 main {
     @apply
+    flex
+    flex-col
     max-w-screen-lg
-    mx-auto
+    mx-auto;
+}
+
+section {
+    @apply
+    text-gray-600
+}
+
+footer {
+    @apply
+        py-10
+    text-gray-600
+}
+
+.styled-a {
+    @apply
+    text-blue-500
+    hover:underline;
 }

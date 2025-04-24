@@ -1,0 +1,120 @@
+{% extends 'extends/main.html' %}
+
+{% block content %}
+
+    <section class="mb-16">
+        <img
+                src="{{ url_for('static', filename='hero.png') }}"
+                alt="Hero Image"
+                class="w-full"
+        />
+
+        <div class="flex justify-center">
+
+            <a href="/support-us" class="btn-a">
+                <img
+                        src="{{ url_for('static', filename='donate_emoji_48.png') }}"
+                        alt="Donate Icon"
+                        style="height: 24px; width: 24px;"
+                />
+                Support or Donate
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="mb-16">
+
+        <div class="text-center">
+
+            <div class="flex gap-2 items-end justify-center my-8">
+                <h1 class="text-4xl">
+                    Welcome to Python Scotland
+                </h1>
+                <img
+                        src="{{ url_for('static', filename='scottish-flag.gif') }}"
+                        alt="Scottish Flag"
+                        style="height: 60px;"
+                />
+            </div>
+
+            <p>
+                Python Scotland aims to help, support and uplift local communities
+                within Scotland that are using the Python programming language.
+            </p>
+
+            <p>
+                See more about what we want to achieve on
+                <a href="/our-mission" class="styled-a">Our Mission</a> page.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="mb-5">
+
+        <h1 class="text-2xl text-center">
+            Communities we currently support
+        </h1>
+
+        <div class="flex flex-col gap-4  my-8">
+
+            <div class="flex gap-2 rounded-2xl bg-gray-50 p-4 shadow-xl">
+                <img
+                        src="{{ url_for('static', filename='python-glasgow-logo.jpg') }}"
+                        alt="Python Glasgow Logo"
+                        class="rounded-2xl"
+                        style="height: 150px; width: 150px;"
+                />
+                <div class="p-4">
+                    <h2 class="text-xl mb-4">
+                        Python Glasgow
+                    </h2>
+                    <p class="mb-2">
+                        Python Glasgow is a community of Python developers
+                        in Glasgow, Scotland.
+                    </p>
+                    <a href="https://www.meetup.com/python-glasgow/" class="styled-a">
+                        Meetup Page
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="mb-5">
+
+        <h1 class="text-2xl text-center">
+            Our partners and sponsors
+        </h1>
+
+        <div class="flex flex-wrap gap-6 items-center justify-center my-8">
+
+            <a href="/" target="_blank">
+                <img
+                        src="{{ url_for('static', filename='ebcs_logo.png') }}"
+                        alt="Eternal Balance Community Services Logo"
+                />
+            </a>
+
+            <a href="https://uilix.com" target="_blank">
+                <img
+                        src="{{ url_for('static', filename='uilix_logo.png') }}"
+                        alt="UiliX Logo"
+                />
+            </a>
+
+        </div>
+
+    </section>
+
+
+    {#    {{ pinned_article('pages/home/1_welcome.html') }}#}
+
+
+{% endblock %}

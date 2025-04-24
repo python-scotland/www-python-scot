@@ -1,10 +1,11 @@
 <nav>
-
-    <img
-            src="{{ url_for('static', filename='python-scotland-logo-rework.gif') }}"
-            alt="Python Scotland Logo"
-            class="w-24"
-    />
+    <a href="/">
+        <img
+                src="{{ url_for('static', filename='python-scotland-logo-rework.gif') }}"
+                alt="Python Scotland Logo"
+                class="w-24"
+        />
+    </a>
 
     <ul>
         <li>
@@ -18,7 +19,7 @@
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/our-mission">
                 <img
                         src="{{ url_for('static', filename='mission_icon_48.png') }}"
                         alt="Mission Icon"
@@ -27,14 +28,24 @@
                 Our Mission
             </a>
         </li>
+        {#        <li>#}
+        {#            <a href="/get-involved">#}
+        {#                <img#}
+        {#                        src="{{ url_for('static', filename='get_involved_icon_48.png') }}"#}
+        {#                        alt="Get Involved Icon"#}
+        {#                        style="height: 18px; width: 18px;"#}
+        {#                />#}
+        {#                Get Involved#}
+        {#            </a>#}
+        {#        </li>#}
         <li>
-            <a href="/">
+            <a href="/support-us">
                 <img
-                        src="{{ url_for('static', filename='get_involved_icon_48.png') }}"
+                        src="{{ url_for('static', filename='donate_emoji_48.png') }}"
                         alt="Get Involved Icon"
                         style="height: 18px; width: 18px;"
                 />
-                Get Involved
+                Support Us
             </a>
         </li>
     </ul>
