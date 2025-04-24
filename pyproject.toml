@@ -16,8 +16,8 @@ dev = [
 
 [tool.pyqwe]
 flask = "*:flask run --debug"
-tailwindcss = "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
+tailwindcss = "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/css/main.css --watch"
 dev = [
     "*:flask run --debug --port 5001",
-    "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/main.css --watch"
+    "*:npx @tailwindcss/cli -i ./tailwindcss/__main__.css -o ./app/static/css/main.css --watch"
 ]
