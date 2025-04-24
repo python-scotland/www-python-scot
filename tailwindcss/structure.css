@@ -1,4 +1,57 @@
-body, html {
+html {
     height: 100vh;
-    background: linear-gradient(20deg, #c7ccff, #fffbd4);
+    background: linear-gradient(20deg, #c7ccff, #fffbd4) no-repeat center center fixed;
+}
+
+nav {
+    @apply
+    max-w-screen-lg
+    mx-auto
+    top-0
+    sticky
+    flex
+    justify-between
+    items-center
+    py-2
+    px-4
+    my-4
+    bg-white
+    rounded-lg;
+}
+
+nav ul {
+    @apply
+    list-none
+    flex
+    gap-4
+    px-2
+}
+
+nav li {
+    @apply
+    inline-block;
+}
+
+nav a {
+    @apply
+    flex
+    gap-2
+    items-center
+    rounded-lg
+    px-4
+    py-3
+    text-sm
+    cursor-pointer;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+nav a:hover {
+    @apply
+    shadow-sm;
+}
+
+main {
+    @apply
+    max-w-screen-lg
+    mx-auto
 }
