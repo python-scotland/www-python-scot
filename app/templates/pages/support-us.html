@@ -2,23 +2,55 @@
 
 {% block content %}
 
-    <section class="text-center py-16">
+    <section>
 
-        <p>
-            We are still working on this website,
-            this page will be available soon.
-        </p>
-        <p>
-            If you would like to get involved in this
-            sites development, you can contribute
-            on our GitHub repository.
-        </p>
+        <img
+                src="{{ url_for('static', filename='emoji_icons/donate_emoji_48.png') }}"
+                alt="Support Us Icon"
+                class="my-12 mx-auto"
+                style="height: 30px; width: 30px;"
+        />
 
-        <p>
-            <a href="https://github.com/python-scotland/www-python-scot" class="styled-a">
-                https://github.com/python-scotland/www-python-scot
-            </a>
-        </p>
+        <div class="flex flex-col gap-4 my-8">
+
+            <div class="flex flex-col gap-4 rounded-2xl bg-gray-50 p-12 shadow-xl">
+
+                <p class="font-bold">We will be able to take donations from the 1st of June.</p>
+
+                <div class="flex flex-col gap-4 text-sm">
+
+                    <p class="text-center">&mdash;</p>
+
+                    <p>
+                        We have appointed Eternal Balance Community Services CIC
+                        (<a target="_blank" class="styled-a"
+                            href="https://find-and-update.company-information.service.gov.uk/company/SC769683">SC769683</a>)
+                        to serve as our financial controller. This arrangement allows us to anchor our financial account
+                        to
+                        an external
+                        source, enabling a flexible organisational structure. This flexibility ensures our team can
+                        remain
+                        focused on our core mission of supporting Python communities across Scotland.
+                    </p>
+
+                    <p>To find out more about what a CIC is
+                        <a target="_blank" class="styled-a"
+                           href="https://www.gov.uk/government/publications/community-interest-companies-how-to-form-a-cic/community-interest-companies-guidance-chapters#what-is-a-cic">click
+                            here</a>.</p>
+
+                    <p>
+                        Some more information about EBCS can be found here;
+                        <a class="styled-a-disabled" href="#">ebcommunity.org.uk (coming soon)</a>,
+                        <a target="_blank" class="styled-a"
+                           href="https://www.nhs24.scot/find-a-service/health-and-wellbeing-services/3a03cc55fcfa4486ad316ae47d483e54%201/">NHS
+                            24</a>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 

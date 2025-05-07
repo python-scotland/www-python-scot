@@ -110,3 +110,10 @@ footer {
     text-blue-500
     hover:underline;
 }
+
+.styled-a-disabled {
+    @apply
+    text-blue-200
+    cursor-not-allowed
+    hover: underline;
+}

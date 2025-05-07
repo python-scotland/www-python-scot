@@ -1,12 +1,17 @@
-<footer class="mb-5 text-center">
+<footer class="flex flex-col gap-4 mb-5 text-center">
 
-    <p>
-        Do you run a Python community in Scotland, or thinking about starting one? - let us know!
-    </p>
+    <div class="flex flex-col">
+        <p>
+            Do you run a Python community in Scotland, or are you thinking about starting one?&mdash;let us know!
+        </p>
+        <p>
+            Contact us at
+            <a href="mailto:organisers@python.scot" class="styled-a">organisers@python.scot</a>
+        </p>
+    </div>
 
-    <p>
-        Contact us at
-        <a href="mailto:organisers@python.scot" class="styled-a">organisers@python.scot</a>
-    </p>
+    <div>
+        <a href="{{ url_for('code_of_conduct') }}" class="styled-a">Code of Conduct</a>
+    </div>
 
 </footer>

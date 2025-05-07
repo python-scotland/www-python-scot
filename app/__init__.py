@@ -25,6 +25,10 @@ def create_app():
     def get_involved():
         return render_template("pages/get-involved.html")
 
+    @app.route("/code-of-conduct")
+    def code_of_conduct():
+        return render_template("pages/code-of-conduct.html")
+
     @app.before_request
     def before_request():
         g.head = Head(
