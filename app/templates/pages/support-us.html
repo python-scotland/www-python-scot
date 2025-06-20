@@ -15,8 +15,75 @@
 
             <div class="flex flex-col gap-4 rounded-2xl bg-gray-50 p-12 shadow-xl">
 
-                <p class="font-bold">We will be able to take donations from the 1st of June.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
+                    <div class="flex flex-col gap-4 items-center text-center">
+
+                        <img
+                                src="{{ url_for('static', filename='emoji_icons/donate_one_off_emoji_48.png') }}"
+                                alt="Donate One-off Icon"
+                                style="height: 30px; width: 30px;"
+                        />
+
+                        <h2 class="text-2xl">One-off Donation</h2>
+
+                        <p class="px-8">Make a one-off donation via Stripe, the donation amount can be adjusted.</p>
+
+                        <a
+                                class="btn-a btn-green"
+                                target="_blank"
+                                href="https://donate.stripe.com/4gMeV66usdVi0rI4UM6c000"
+                        >
+                            Donate
+                        </a>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4 items-center text-center">
+
+                        <img
+                                src="{{ url_for('static', filename='emoji_icons/donate_recurring_emoji_48.png') }}"
+                                alt="Donate One-off Icon"
+                                style="height: 30px; width: 30px;"
+                        />
+
+                        <h2 class="text-2xl">Support us on Patreon</h2>
+
+                        <p class="px-8">Support us by giving a monthly amount via Patreon.</p>
+
+                        <a
+                                class="btn-a btn-green"
+                                target="_blank"
+                                href="https://patreon.com/PythonScotland"
+                        >
+                            Go to Patreon
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="text-center font-bold py-10">
+                    <p>
+                        The donation you make will be used to fund the current and any future Python events in Scotland.
+                    </p>
+
+                    <p>
+                        We are grateful for your support.
+                    </p>
+                </div>
+
+                <div class="text-center text-sm">
+                    <p>
+                        As Python Scotland is a community-led organisation, we are not able to receive any donations
+                        directly.
+                    </p>
+                    <p>
+                        Our funding and financial control is currently being handled by our partner UiliX Ltd.
+                    </p>
+                </div>
+
+                {#
                 <div class="flex flex-col gap-4 text-sm">
 
                     <p class="text-center">&mdash;</p>
@@ -47,7 +114,7 @@
                     </p>
 
                 </div>
-
+#}
             </div>
 
         </div>

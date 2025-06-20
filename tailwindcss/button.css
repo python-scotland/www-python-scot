@@ -8,14 +8,20 @@
     px-4
     py-3
     text-sm
-        border
-        border-gray-400
+    border
+    border-gray-400
     cursor-pointer;
     background-color: rgba(0, 0, 0, 0.04);
 }
 
 .btn-a:hover {
     @apply
-        border-gray-500
+    border-gray-500
     shadow-sm;
+}
+
+.btn-green {
+    @apply
+    bg-green-700
+    text-white;
 }
